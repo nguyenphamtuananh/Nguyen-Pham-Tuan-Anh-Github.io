@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Weather Dashboard</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="info-text">
+			<p>How to use: </p> <br>
+			<p> Type the city you want to look for. For example: HoChiMinh, VN or London, UK</p>
+		</div>
+		<div class="main-content">
+			<h1>Weather Dashboard</h1>
+			<div class="search-bar">
+				<input type="text" id="city-input" placeholder="Enter city name">
+				<button id="search-btn">Search</button>
+			</div>
+			<div class="weather-info">
+				<h2 id="city-name"></h2>
+				<p id="weather-description"></p>
+				<p id="temperature"></p>
+				<p id="humidity"></p>
+				<p id="wind-speed"></p>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
