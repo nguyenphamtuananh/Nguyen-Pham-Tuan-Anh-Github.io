@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A professional portfolio showcasing my skills and projects">
+	<title>Portfolio Website</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+	<!-- Loading Overlay -->
+	<div class="loading-overlay" id="loadingOverlay">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Portfolio Website</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+					<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+					<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+					<li class="nav-item"><a class="nav-link" href="#testimonials">Feedback</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown">
+							🌐 Language
+						</a>
+						<div class="dropdown-menu" aria-labelledby="languageDropdown">
+							<a class="dropdown-item" href="index.html">English</a>
+							<a class="dropdown-item" href="index_vn.html">Tiếng Việt</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Hero Section -->
+	<section id="home" class="section-modern" style="padding: 0; margin: 0;">
+		<div id="featured">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-12 text-center hero-content">
+						<h1 class="hero-title" data-aos="fade-up">Portfolio</h1>
+						<p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Software Engineering</p>
+						<div class="typing-text" data-aos="fade-up" data-aos-delay="400">
+							<span id="typed-text"></span><span class="cursor">|</span>
+						</div>
+						<div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+							<a href="#projects" class="btn btn-modern btn-primary-modern">View My Work</a>
+							<a href="#contact" class="btn btn-modern btn-secondary-modern">Hire Me</a>
+						</div>
+						<div class="social-icons" data-aos="fade-up" data-aos-delay="800">
+							<a href="https://www.facebook.com/profile.php?id=100025309540728" class="social-icon">
+								<i class="fab fa-facebook"></i>
+							</a>
+							<a href="https://github.com/nguyenphamtuananh" class="social-icon">
+								<i class="fab fa-github"></i>
+							</a>
+							<a href="https://twitter.com" class="social-icon">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Section -->
+	<section id="about" class="section-modern">
+		<div class="container">
+			<div class="section-title" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+				<h2>About Me</h2>
+				<p>Get to know more about me and my journey</p>
+			</div>
+			<div class="row align-items-center">
+				<div class="col-md-4" data-aos="fade-right"  data-aos-duration="800" data-aos-once="true" data-aos-delay="200">
+					<img src="1.jpg" alt="Dương Quốc Huy" class="img-fluid about-image">
+				</div>
+				<div class="col-md-8" data-aos="fade-left" data-aos-duration="800" data-aos-once="true" data-aos-delay="400">
+					<div class="about-text">
+						<p class="mb-4">Hello! I'm Nguyễn Phạm Tuấn Anh, a web developer with a passion for creating efficient and scalable applications. I have a medium-level of making front-end, beside that i also have strong ability to handle back-end problem. My experience includes working with HTML, CSS, JavaScript, and modern frameworks like React and Node.js. I am always eager to learn new technologies and improve my skills.</p>
+						<p class="mb-4">Avoid living in sedentary lifestyle, i usually play badminton or tennis to relax my muscle and boost blood circulation in my brain and body. Sometimes, i will learn more languages such as: Japanese, Chinese, Russian or etc, this may increase my chance of working in international environments.</p>
+						<a href="resume.pdf" class="btn btn-project">Download Resume <i class="fas fa-download ml-2"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills Section -->
+	<section id="skills" class="section-modern">
+		<div class="container">
+			<div class="section-title" data-aos="fade-up">
+				<h2>My Skills</h2>
+				<p>Here are some of the technologies I work with</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+					<div class="skill-item">
+						<i class="fab fa-html5 skill-icon text-danger"></i>
+						<h4>HTML</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+					<div class="skill-item">
+						<i class="fab fa-css3-alt skill-icon text-primary"></i>
+						<h4>CSS</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+					<div class="skill-item">
+						<i class="fab fa-js skill-icon text-warning"></i>
+						<h4>JavaScript</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+					<div class="skill-item">
+						<i class="fab fa-react skill-icon text-info"></i>
+						<h4>React</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+					<div class="skill-item">
+						<i class="fab fa-python skill-icon text-success"></i>
+						<h4>Python</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+					<div class="skill-item">
+						<i class="fas fa-database skill-icon text-dark"></i>
+						<h4>MariaDB</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="700">
+					<div class="skill-item">
+						<i class="fab fa-java skill-icon text-secondary"></i>
+						<h4>Java</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="800">
+					<div class="skill-item">
+						<i class="fas fa-code skill-icon text-success"></i>
+						<h4>C++</h4>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="900">
+					<div class="skill-item">
+						<i class="fab fa-linux skill-icon text-muted"></i>
+						<h4>Linux</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Projects Section -->
+	<section id="projects" class="section-modern">
+		<div class="container">
+			<div class="section-title" data-aos="fade-up">
+				<h2>My Projects</h2>
+				<p>Some of my most recent practice projects with HTML, CSS, and JavaScript</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+					<div class="project-card">
+						<div class="project-image">
+							<img src="project-1.jpg" alt="Project 1">
+							<div class="project-overlay">
+								<a href="project-1/index.html" class="btn btn-light btn-modern">View Project</a>
+							</div>
+						</div>
+						<div class="project-body">
+							<h5 class="project-title">To-Do List Application</h5>
+							<p class="project-description">A to-do list where I can create a note to remember what I have to do.</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+					<div class="project-card">
+						<div class="project-image">
+							<img src="project-2.png" alt="Project 2">
+							<div class="project-overlay">
+								<a href="project-2/index.html" class="btn btn-light btn-modern">View Project</a>
+							</div>
+						</div>
+						<div class="project-body">
+							<h5 class="project-title">Weather Forecast App</h5>
+							<p class="project-description">Weather Forecast Checking</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+					<div class="project-card">
+						<div class="project-image">
+							<img src="project-3.png" alt="Project 3">
+							<div class="project-overlay">
+								<a href="project-3/index.html" class="btn btn-project">View Project</a>	
+							</div>
+						</div>
+						<div class="project-body">
+							<h5 class="project-title">Dish Finder</h5>
+							<p class="project-description">Dish Finder, you can look for dish's ingredients and guidance with just a type of name of that dish.</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+					<div class="project-card">
+						<div class="project-image">
+							<img src="project-4.png" alt="Project 4">
+							<div class="project-overlay">
+								<a href="project-4/index.html" class="btn btn-light btn-modern">View Project</a>
+							</div>
+						</div>
+						<div class="project-body">
+							<h5 class="project-title">Pomodoro Timer</h5>
+							<p class="project-description">Pomodoro time help you focus on studying.</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="500">
+					<div class="project-card">
+						<div class="project-image">
+							<img src="project-5.png" alt="Project 5">
+							<div class="project-overlay">
+								<a href="https://github.com/duong-quoc-huy/reading_book_online" class="btn btn-light btn-modern">View Project</a>
+							</div>
+						</div>
+						<div class="project-body">
+							<h5 class="project-title">Reading Book Online</h5>
+							<p class="project-description">On this website you can read book directly online without downloading it. You still can download it if you need.</p>
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="600">
+					<div class="project-card">
+						<div class="project-image">
+							<img src="project-6.png" alt="Project 6">
+							<div class="project-overlay">
+								<a href="https://github.com/nguyenphamtuananh/my-lamp-project" class="btn btn-light btn-modern">View Project</a>
+							</div>
+						</div>
+						<div class="project-body">
+							<h5 class="project-title">Midtterm cloud comuputing</h5>
+							<p class="project-description">An application about library management was built with Python.</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Experience Section -->
+	<section id="experience" class="section-modern">
+		<div class="container">
+			<div class="section-title" data-aos="fade-up">
+				<h2>My Experience</h2>
+				<p>A brief overview of my professional journey</p>
+			</div>
+			<div class="timeline">
+				<div class="timeline-item" data-aos="fade-right">
+					<div class="timeline-icon">1</div>
+					<div class="timeline-content">
+						<h4>Cybersecurity</h4>
+						<p class="company"><strong>Central Intelligence Agency (CIA)</strong> - 2024 to Present</p>
+						<p>Worked in professional environments to protect agency networks and national security on the internet.</p>
+					</div>
+				</div>
+				<div class="timeline-item" data-aos="fade-left">
+					<div class="timeline-icon">2</div>
+					<div class="timeline-content">
+						<h4>IT Specialist, GS-14</h4>
+						<p class="company"><strong>Federal Bureau of Investigation (FBI)</strong> - 2023 to Present</p>
+						<p>Serve as a senior IT Specialist and project manager/team lead as required.</p>
+					</div>
+				</div>
+				<div class="timeline-item" data-aos="fade-right">
+					<div class="timeline-icon">3</div>
+					<div class="timeline-content">
+						<h4>Computer Networking and Security</h4>
+						<p class="company"><strong>National Security Agency (NSA)</strong> - 2020 to 2021</p>
+						<p>Solved complex problems, tested innovative approaches, and researched solutions for data management.</p>
+					</div>
+				</div>
+				<div class="timeline-item" data-aos="fade-left">
+					<div class="timeline-icon">4</div>
+					<div class="timeline-content">
+						<h4>Backend Developer</h4>
+						<p class="company"><strong>National Cyber Security Center of Vietnam</strong> - 2021 to Present</p>
+						<p>Developed security applications, network monitoring, and intrusion detection systems using Cloud, Big Data, and AI.</p>
+					</div>
+				</div>
+				<div class="timeline-item" data-aos="fade-right">
+					<div class="timeline-icon">5</div>
+					<div class="timeline-content">
+						<h4>Security Analyst</h4>
+						<p class="company"><strong>Ministry of Defense (Vietnam)</strong> - 2024 to 2025</p>
+						<p>In charge of protecting computer system, network and data of organization. Take responsibility for preventing unauthorized access into government system.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Testimonials Section -->
+	<section id="testimonials" class="section-modern" style="background: var(--background-light);">
+		<div class="container">
+			<div class="section-title" data-aos="fade-up">
+				<h2>Feedback</h2>
+				<p>What my seniors say about me</p>
+			</div>
+			<div class="row">
+				<div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+					<div class="testimonial-card">
+						<p>"Tuấn Anh is a potential student. He can understand every requirements was given to him, but sometimes if that requirements is complicated, i would take him a bit longer to find a solution"</p>
+						<p class="testimonial-author">- NSA's team manager</p>
+					</div>
+				</div>
+				<div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+					<div class="testimonial-card">
+						<p>"Working with Tuấn Anh was a breeze. He is hard-working, always find new thing to learn and always ready to get adapted in a new environment."</p>
+						<p class="testimonial-author">- Teamleader of FBI Operational Technology</p>
+					</div>
+				</div>
+				<div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+					<div class="testimonial-card">
+						<p>"I highly recommend Tuấn Anh for any web development project, especially in back-end problem. He delivers quality work on time. Every work was in charged by Huy, can be assured, his code is clean, readable and easy to fix when it got passed down to Juniors or Internship."</p>
+						<p class="testimonial-author">- National Cyber Security Center of Vietnam</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact" class="section-modern">
+		<div class="container">
+			<div class="section-title" data-aos="fade-up">
+				<h2>Contact Me</h2>
+				<p>I'd love to hear from you</p>
+			</div>
+			<div class="row">
+				<div class="col-md-6" data-aos="fade-right">
+					<div class="contact-info-modern">
+						<h4>Get in Touch</h4>
+						<div class="contact-item mb-3">
+							<i class="fas fa-map-marker-alt mr-3" style="color: var(--primary-color);"></i>
+							<span>127 ABC street, District X, Ward Y, HoChiMinh City</span>
+						</div>
+						<div class="contact-item mb-3">
+							<i class="fas fa-phone-alt mr-3" style="color: var(--primary-color);"></i>
+							<span>0909 xxx xxx</span>
+						</div>
+						<div class="contact-item mb-3">
+							<i class="fas fa-envelope mr-3" style="color: var(--primary-color);"></i>
+							<span>hanhlub90@gmail.com</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6" data-aos="fade-left">
+					<form class="contact-form" id="contactForm" action="https://formspree.io/f/mldbkgab" method="POST" autocomplete="off" novalidate>
+						<div class="form-group-modern">
+							<input type="text" class="form-control-modern" name="name" placeholder=" " required>
+							<label class="form-label-modern">Your Name</label>
+						</div>
+						<div class="form-group-modern">
+							<input type="email" class="form-control-modern" name="email" placeholder=" " required>
+							<label class="form-label-modern">Your Email</label>
+						</div>
+						<div class="form-group-modern">
+							<textarea name="message" class="form-control-modern" placeholder=" " rows="5" required></textarea>
+							<label class="form-label-modern">Your Message</label>
+						</div>
+						<button type="submit" class="btn btn-project btn-block">Send Message <i class="fas fa-paper-plane ml-2"></i></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container text-center">
+			<p class="mb-3">Let's connect on social media!</p>
+			<div class="footer-social mb-4">
+				<a href="https://www.facebook.com/profile.php?id=100025309540728" aria-label="Facebook">
+					<i class="fab fa-facebook"></i>
+				</a>
+				<a href="https://github.com/nguyenphamtuananh" aria-label="GitHub">
+					<i class="fab fa-github"></i>
+				</a>
+				<a href="https://twitter.com" aria-label="Twitter">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</div>
+			<p>&copy; 2025 Nguyễn Phạm Tuấn Anh. All rights reserved.</p>
+		</div>
+	</footer>
+
+	<!-- Back to Top Button -->
+	<div class="back-to-top" id="backToTop">
+		<i class="fas fa-arrow-up"></i>
+	</div>
+
+	<!-- Scripts -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="assets/js/scripts.js"></script>
+
+</body>
+</html>
